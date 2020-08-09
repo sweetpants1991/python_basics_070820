@@ -26,9 +26,20 @@ print(f"Time format hh:mm:ss {hours} : {minutes} : {seconds}")
 # Найдите сумму чисел n + nn + nnn.
 # Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
 
-num = input ("Please, input number: ")
+num = input("Please, input number: ")
 var1 = int(num + num)
 var2 = int(num + num + num)
 var3 = int(num) + var1 + var2
 print(var3)
 
+# case4:
+# Пользователь вводит целое положительное число.
+# Найдите самую большую цифру в числе.
+# Для решения используйте цикл while и арифметические операции.
+
+num1 = input("Please, input number: ")
+var_x = 0
+for var_y in num1:
+    while int(var_y) > var_x:
+        var_x = int(var_y)
+print(var_x)
