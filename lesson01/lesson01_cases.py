@@ -20,3 +20,15 @@ hours = time // 3600
 minutes = (time - hours * 3600) // 60
 seconds = (time - (hours * 3600 + minutes * 60))
 print(f"Time format hh:mm:ss {hours} : {minutes} : {seconds}")
+
+# case3:
+# Узнайте у пользователя число n.
+# Найдите сумму чисел n + nn + nnn.
+# Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
+
+num = input ("Please, input number: ")
+var1 = int(num + num)
+var2 = int(num + num + num)
+var3 = int(num) + var1 + var2
+print(var3)
+
