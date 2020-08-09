@@ -43,3 +43,25 @@ for var_y in num1:
     while int(var_y) > var_x:
         var_x = int(var_y)
 print(var_x)
+
+# case5:
+# Запросите у пользователя значения выручки и издержек фирмы.
+# Определите, с каким финансовым результатом работает фирма
+# (прибыль — выручка больше издержек, или убыток — издержки больше выручки)
+# Выведите соответствующее сообщение.
+# Если фирма отработала с прибылью, вычислите рентабельность выручки (соотношение прибыли к выручке).
+# Далее запросите численность сотрудников фирмы и определите прибыль фирмы в расчете на одного сотрудника.
+
+proceeds = int(input("Please, input your proceeds: "))
+costs = int(input("Please, input your costs: "))
+if proceeds > costs:
+    profit = proceeds - costs
+    profitability = float(profit / proceeds)
+    print("You have profit: ", profit)
+    worker = int(input("Please, input number of workers: "))
+    profit_per_worker = float(profit / worker)
+    print("Your profit per worker: ", profit_per_worker)
+elif proceeds == costs:
+    print("You try to make ends meet")
+else:
+    print("You have loss")
