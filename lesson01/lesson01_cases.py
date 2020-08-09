@@ -80,4 +80,4 @@ while day_result_km < var_b:
     var_a = var_a + var_a * 0.1
     day = day + 1
     day_result_km = day_result_km + var_a
-print("You will get your target on day", day)
+print("You'll get your target on day", day)
