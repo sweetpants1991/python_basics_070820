@@ -65,3 +65,19 @@ elif proceeds == costs:
     print("You try to make ends meet")
 else:
     print("You have loss")
+
+# case6:
+# Спортсмен занимается ежедневными пробежками. В первый день его результат составил a километров.
+# Каждый день спортсмен увеличивал результат на 10 % относительно предыдущего.
+# Требуется определить номер дня, на который общий результат спортсмена составит не менее b километров.
+# Программа должна принимать значения параметров a и b и выводить одно натуральное число — номер дня.
+
+var_a = float(input("Please, input your day-result: "))
+var_b = float(input("Please, input your target: "))
+day = 1
+day_result_km = var_a
+while day_result_km < var_b:
+    var_a = var_a + var_a * 0.1
+    day = day + 1
+    day_result_km = day_result_km + var_a
+print("You will get your target on day", day)
